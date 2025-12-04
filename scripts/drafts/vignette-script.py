@@ -5,9 +5,8 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import pandas as pd
 
-# Get data
-url = 'https://raw.githubusercontent.com/pstat197/vignette-XGBoost/refs/heads/main/data/Iris.csv'
-df = pd.read_csv(url,index_col=0)
+# Get data from local CSV
+df = pd.read_csv("data/Iris.csv", index_col=0)
 
 # Transform response (Species) for XGBClassifier
 def transform(val):
@@ -30,9 +29,22 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='merror')
 model.fit(X_train, y_train)
 
-# Make predictions
+# Make predictions on test set
 predictions = model.predict(X_test)
 
 # Evaluate the model
 train_accuracy = accuracy_score(y_test, predictions)
 print(f"Accuracy: {train_accuracy}")
+
+# Make predictions for the full dataset
+all_predictions = model.predict(X)
+
+# Build processed dataset: features, encoded label, prediction, and split
+df_processed = X.copy()
+df_processed["SpeciesEncoded"] = y
+df_processed["PredictedClass"] = all_predictions
+df_processed["Split"] = "train"
+df_processed.loc[X_test.index, "Split"] = "test"
+
+# Save single processed CSV
+df_processed.to_csv("data/Iris_processed.csv", index=False)
