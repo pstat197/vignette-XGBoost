@@ -14,7 +14,7 @@ XGBoost, or eXtreme Gradient Boosting, is a software library which provides a re
 
 ### Structure
 
-* data/: TBD
+* data/: Iris.csv and Iris_processed.csv
 * scripts/: drafts and final script versions
 
 ### References
