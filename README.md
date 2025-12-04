@@ -6,7 +6,7 @@ Vignette on implementing XGBOOST using [DATASET]; created as a class project for
 
 ### Contributors
 
-Brooks Piper, Jay [LASTNAME], Coraline [LASTNAME], Shahil [LASTNAME], Taneesha Panda
+Brooks Piper, Jay Leung, Coraline [LASTNAME], Shahil [LASTNAME], Taneesha Panda
 
 ### Abstract
 
