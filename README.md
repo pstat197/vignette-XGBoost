@@ -2,11 +2,11 @@
 
 ### Overview
 
-Vignette on implementing XGBOOST using [DATASET]; created as a class project for PSTAT197A in Fall 2025.
+Vignette on implementing XGBOOST using the Iris Species dataset from Kaggle; created as a class project for PSTAT197A in Fall 2025.
 
 ### Contributors
 
-Brooks Piper, Jay Leung, Coraline [LASTNAME], Shahil [LASTNAME], Taneesha Panda
+Brooks Piper, Jay Leung, Coraline Zhu, Shahil Patel, Taneesha Panda
 
 ### Abstract
 
@@ -19,4 +19,5 @@ XGBoost, or eXtreme Gradient Boosting, is a software library which provides a re
 
 ### References
 
-1. https://xgboost.readthedocs.io/en/stable/ 
+1. https://www.kaggle.com/datasets/uciml/iris
+2. https://xgboost.readthedocs.io/en/stable/
