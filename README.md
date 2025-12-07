@@ -2,7 +2,7 @@
 
 ### Overview
 
-Vignette on implementing XGBOOST using the Iris Species dataset from Kaggle; created as a class project for PSTAT197A in Fall 2025.
+Vignette on implementing XGBoost using the Iris Species dataset from Kaggle; created as a class project for PSTAT197A in Fall 2025.
 
 ### Contributors
 
