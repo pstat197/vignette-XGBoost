@@ -10,27 +10,19 @@ Brooks Piper, Jay Leung, Coraline Zhu, Shahil Patel, Taneesha Panda
 
 ### Abstract
 
-This vignette demonstrates how to use the `xgboost` library in Python to build a multi-class
-classifier on the classic iris dataset. The goal is to predict the species of a flower from
-four numeric features (sepal length, sepal width, petal length, and petal width). We show
-how to load the data, split it into training and test sets with `scikit-learn`, fit an
-`XGBClassifier`, and evaluate performance using classification accuracy. The accompanying
-notebook includes a short summary of what the model does and presents the main results in a
-way that another PSTAT197 student can easily follow and adapt to their own data.
+This vignette demonstrates how to use the `xgboost` library in Python to build a multi-class classifier on the classic iris dataset. The goal is to predict the species of a flower from four numeric features (sepal length, sepal width, petal length, and petal width). We show how to load the data, split it into training and test sets with `scikit-learn`, fit an `XGBClassifier`, and evaluate performance using classification accuracy. The accompanying notebook includes a summary of what the model does and presents the main results in a way that another PSTAT197 student can easily follow and adapt to their own data.
 
 ## Repository Contents
 
 - `data/`  
-  - contains the example dataset used in the vignette (iris data in CSV form).
+  - `Iris.csv`: contains the example dataset used in the vignette (iris data in CSV form).
+  - `Iris_processed.csv`: contains the example dataset and predicted class labels.
 
 - `scripts/`  
-  - `drafts/vignette-script.py`: Python script that loads the dataset, trains the XGBoost
-    classifier, makes predictions, and reports accuracy. This script mirrors the main steps
-    in the notebook, with line-by-line comments for reproducibility.
+  - `drafts/vignette-script.py`: Python script that loads the dataset, trains the XGBoost classifier, makes predictions, and reports accuracy. This script mirrors the main steps in the notebook, with line-by-line comments for reproducibility.
 
 - `vignette.ipynb`  
-  - main vignette notebook that combines narrative text, code cells, and output.  
-    It explains what the model does, walks through the analysis, and shows the final results.
+  - main vignette notebook that combines narrative text, code cells, and output. It explains what the model does, walks through the analysis, and shows the final results.
 
 ## References
 
