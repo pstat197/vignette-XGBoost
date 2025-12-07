@@ -28,20 +28,9 @@ way that another PSTAT197 student can easily follow and adapt to their own data.
     classifier, makes predictions, and reports accuracy. This script mirrors the main steps
     in the notebook, with line-by-line comments for reproducibility.
 
-- Notebook file (Jupyter)  
+- `vignette.ipynb`  
   - main vignette notebook that combines narrative text, code cells, and output.  
     It explains what the model does, walks through the analysis, and shows the final results.
-    (Update this line with the exact filename, e.g. `xgboost_iris_vignette.ipynb`.)
-
-- `img/` (optional)  
-  - figures generated from the analysis, such as feature-importance plots or confusion
-    matrices, if used in the vignette.
-
-- `README.md`  
-  - overview of the project, repository structure, and references.
-
-- `.gitignore`, `LICENSE`  
-  - standard project files created when the repository was initialized.
 
 ## References
 
