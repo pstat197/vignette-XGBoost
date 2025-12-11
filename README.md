@@ -19,7 +19,7 @@ This vignette demonstrates how to use the `xgboost` library in Python to build a
   - `Iris_processed.csv`: contains the example dataset and predicted class labels.
 
 - `scripts/`  
-  - `drafts/vignette-script.py`: Python script that loads the dataset, trains the XGBoost classifier, makes predictions, and reports accuracy. This script mirrors the main steps in the notebook, with line-by-line comments for reproducibility.
+  - `vignette-script.py`: Python script that loads the dataset, trains the XGBoost classifier, makes predictions, and reports accuracy. This script mirrors the main steps in the notebook, with line-by-line comments for reproducibility.
 
 - `vignette.ipynb`  
   - main vignette notebook that combines narrative text, code cells, and output. It explains what the model does, walks through the analysis, and shows the final results.
