@@ -34,16 +34,3 @@ predictions = model.predict(X_test)
 # Evaluate the model
 train_accuracy = accuracy_score(y_test, predictions)
 print(f"Accuracy: {train_accuracy}")
-
-# Make predictions for the full dataset
-all_predictions = model.predict(X)
-
-# Build processed dataset: features, encoded label, prediction, and split
-df_processed = X.copy()
-df_processed["SpeciesEncoded"] = y
-df_processed["PredictedClass"] = all_predictions
-df_processed["Split"] = "train"
-df_processed.loc[X_test.index, "Split"] = "test"
-
-# Save single processed CSV
-df_processed.to_csv("data/Iris_processed.csv", index=False)
